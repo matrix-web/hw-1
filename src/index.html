@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="tabs" class="tabs">
+    <button data-type="calucator" class="tabs__tab-btn">Калькулятор дат</button>
+    <button data-type="timer" class="tabs__tab-btn">Таймер</button>
+  </div>
+  <div class="hide" id="calc">
+    <form id="datecalc">
+      <h3>Калькулятор дат</h3>
+      <label>
+      <strong>Первая дата:</strong>
+      <input type="date" name="firstDate" />
+      </label>
+      <label>
+      <strong>Вторая дата:</strong>
+      <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Расчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </form>
+  </div>
+  <div class="hide" id="timer">
+    <form id="timer-form">
+      <label> 
+        <strong>Введите количество минут</strong>
+        <input name="minutes" type="number" min="0" max="59" placeholder="Minutes" />
+      </label>
+      <button type="submit">Start</button>
+    </form>
+    <div id="timerResult"></div>
+  </div>
+  
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
